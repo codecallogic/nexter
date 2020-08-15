@@ -51,7 +51,10 @@ function App() {
           <p className="feature-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus dolorum enim temporibus odit. Eius eligendi dolor id? Asperiores, incidunt! Facilis blanditiis distinctio dolorum a earum fugiat sit veniam nisi commodi!</p>
         </div>
       </section>
-      <div className="story-pics">Story pics</div>
+      <div className="story-pics">
+        <img src="/images/story-1.jpeg" alt="Couple with new house" className="story-img-1"/>
+        <img src="/images/story-2.jpeg" alt="New House" className="story-img-2"/>
+      </div>
       <div className="story-content">
         <h3 className="heading-3 mb-sm">Happy Customers</h3>
         <h2 className="heading-2 heading-2-dark mb-md">&ldquo; The best decision of our lives &rdquo;</h2>
