@@ -63,7 +63,196 @@ function App() {
         </p>
         <button className="btn">Find your own home</button>
       </div>
-      <section className="homes">Homes</section>
+      <section className="homes">
+        <div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <svg className="home-like">
+            <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <h5 className="home-name">Beautiful Family House</h5>
+          <div className="home-location">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <p>USA</p>
+          </div>
+          <div className="home-rooms">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <p>5 Rooms</p>
+          </div>
+          <div className="home-area">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-expand"></use>
+            </svg>
+            <p>325 m <sup>2</sup></p>
+          </div>
+          <div className="home-price">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-key"></use>
+            </svg>
+            <p>$1,200,000</p>
+          </div>
+          <button className="cta">Contact Realtor</button>
+        </div>
+        <div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <svg className="home-like">
+            <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <h5 className="home-name">Beautiful Family House</h5>
+          <div className="home-location">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <p>USA</p>
+          </div>
+          <div className="home-rooms">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <p>5 Rooms</p>
+          </div>
+          <div className="home-area">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-expand"></use>
+            </svg>
+            <p>325 m <sup>2</sup></p>
+          </div>
+          <div className="home-price">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-key"></use>
+            </svg>
+            <p>$1,200,000</p>
+          </div>
+          <button className="cta">Contact Realtor</button>
+        </div><div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <svg className="home-like">
+            <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <h5 className="home-name">Beautiful Family House</h5>
+          <div className="home-location">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <p>USA</p>
+          </div>
+          <div className="home-rooms">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <p>5 Rooms</p>
+          </div>
+          <div className="home-area">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-expand"></use>
+            </svg>
+            <p>325 m <sup>2</sup></p>
+          </div>
+          <div className="home-price">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-key"></use>
+            </svg>
+            <p>$1,200,000</p>
+          </div>
+          <button className="cta">Contact Realtor</button>
+        </div><div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <svg className="home-like">
+            <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <h5 className="home-name">Beautiful Family House</h5>
+          <div className="home-location">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <p>USA</p>
+          </div>
+          <div className="home-rooms">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <p>5 Rooms</p>
+          </div>
+          <div className="home-area">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-expand"></use>
+            </svg>
+            <p>325 m <sup>2</sup></p>
+          </div>
+          <div className="home-price">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-key"></use>
+            </svg>
+            <p>$1,200,000</p>
+          </div>
+          <button className="cta">Contact Realtor</button>
+        </div><div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <svg className="home-like">
+            <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <h5 className="home-name">Beautiful Family House</h5>
+          <div className="home-location">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <p>USA</p>
+          </div>
+          <div className="home-rooms">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <p>5 Rooms</p>
+          </div>
+          <div className="home-area">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-expand"></use>
+            </svg>
+            <p>325 m <sup>2</sup></p>
+          </div>
+          <div className="home-price">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-key"></use>
+            </svg>
+            <p>$1,200,000</p>
+          </div>
+          <button className="cta">Contact Realtor</button>
+        </div><div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <svg className="home-like">
+            <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
+          </svg>
+          <h5 className="home-name">Beautiful Family House</h5>
+          <div className="home-location">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <p>USA</p>
+          </div>
+          <div className="home-rooms">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
+            </svg>
+            <p>5 Rooms</p>
+          </div>
+          <div className="home-area">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-expand"></use>
+            </svg>
+            <p>325 m <sup>2</sup></p>
+          </div>
+          <div className="home-price">
+            <svg>
+              <use xlinkHref="/images/sprite.svg#icon-key"></use>
+            </svg>
+            <p>$1,200,000</p>
+          </div>
+          <button className="cta">Contact Realtor</button>
+        </div>
+      </section>
       <section className="gallery">Gallery</section>
       <div className="footer">Footer</div>
     </div>
