@@ -65,7 +65,7 @@ function App() {
       </div>
       <section className="homes">
         <div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
@@ -94,10 +94,10 @@ function App() {
             </svg>
             <p>$1,200,000</p>
           </div>
-          <button className="cta">Contact Realtor</button>
+          <button className="btn home-button">Contact Realtor</button>
         </div>
         <div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
@@ -126,9 +126,10 @@ function App() {
             </svg>
             <p>$1,200,000</p>
           </div>
-          <button className="cta">Contact Realtor</button>
-        </div><div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <button className="btn home-button">Contact Realtor</button>
+        </div>
+        <div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
@@ -157,9 +158,10 @@ function App() {
             </svg>
             <p>$1,200,000</p>
           </div>
-          <button className="cta">Contact Realtor</button>
-        </div><div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <button className="btn home-button">Contact Realtor</button>
+        </div>
+        <div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
@@ -188,9 +190,10 @@ function App() {
             </svg>
             <p>$1,200,000</p>
           </div>
-          <button className="cta">Contact Realtor</button>
-        </div><div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <button className="btn home-button">Contact Realtor</button>
+        </div>
+        <div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
@@ -219,9 +222,10 @@ function App() {
             </svg>
             <p>$1,200,000</p>
           </div>
-          <button className="cta">Contact Realtor</button>
-        </div><div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="house-image"/>
+          <button className="btn home-button">Contact Realtor</button>
+        </div>
+        <div className="home">
+          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
@@ -250,7 +254,7 @@ function App() {
             </svg>
             <p>$1,200,000</p>
           </div>
-          <button className="cta">Contact Realtor</button>
+          <button className="btn home-button">Contact Realtor</button>
         </div>
       </section>
       <section className="gallery">Gallery</section>
