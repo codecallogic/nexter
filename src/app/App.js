@@ -1,5 +1,5 @@
-import React from 'react';
 import './App.css';
+import React from 'react';
 
 function App() {
   return (
@@ -52,7 +52,14 @@ function App() {
         </div>
       </section>
       <div className="story-pics">Story pics</div>
-      <div className="story-content">Story content</div>
+      <div className="story-content">
+        <h3 className="heading-3 mb-sm">Happy Customers</h3>
+        <h2 className="heading-2 heading-2-dark mb-md">&ldquo; The best decision of our lives &rdquo;</h2>
+        <p className="story-text mb-lg">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, saepe natus maiores molestias aliquid ex id laborum cum dolore iste ipsam ea corporis.
+        </p>
+        <button className="btn">Find your own home</button>
+      </div>
       <section className="homes">Homes</section>
       <section className="gallery">Gallery</section>
       <div className="footer">Footer</div>
