@@ -257,7 +257,18 @@ function App() {
           <button className="btn home-button">Contact Realtor</button>
         </div>
       </section>
-      <section className="gallery">Gallery</section>
+      <section className="gallery">
+        <figure className="gallery-item gallery-item-1">
+          <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
+        </figure>
+        <img src="/images/gal-2.jpeg" alt="Gallery image 2" className="gallery-image"/>
+        <img src="/images/gal-3.jpeg" alt="Gallery image 3" className="gallery-image"/>
+        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
+        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
+        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
+        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
+        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
+      </section>
       <div className="footer">Footer</div>
     </div>
   );
