@@ -261,13 +261,45 @@ function App() {
         <figure className="gallery-item gallery-item-1">
           <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
         </figure>
-        <img src="/images/gal-2.jpeg" alt="Gallery image 2" className="gallery-image"/>
-        <img src="/images/gal-3.jpeg" alt="Gallery image 3" className="gallery-image"/>
-        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
-        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
-        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
-        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
-        <img src="/images/gal-1.jpeg" alt="Gallery image 1" className="gallery-image"/>
+        <figure className="gallery-item gallery-item-2">
+          <img src="/images/gal-2.jpeg" alt="Gallery image 2" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-3">
+          <img src="/images/gal-3.jpeg" alt="Gallery image 3" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-4">
+          <img src="/images/gal-4.jpeg" alt="Gallery image 4" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-5">
+          <img src="/images/gal-5.jpeg" alt="Gallery image 5" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-6">
+          <img src="/images/gal-6.jpeg" alt="Gallery image 6" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-7">
+          <img src="/images/gal-7.jpeg" alt="Gallery image 7" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-8">
+          <img src="/images/gal-8.jpeg" alt="Gallery image 8" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-9">
+          <img src="/images/gal-9.jpeg" alt="Gallery image 9" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-10">
+          <img src="/images/gal-10.jpeg" alt="Gallery image 10" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-11">
+          <img src="/images/gal-11.jpeg" alt="Gallery image 11" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-12">
+          <img src="/images/gal-12.jpeg" alt="Gallery image 12" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-13">
+          <img src="/images/gal-13.jpeg" alt="Gallery image 13" className="gallery-image"/>
+        </figure>
+        <figure className="gallery-item gallery-item-14">
+          <img src="/images/gal-14.jpeg" alt="Gallery image 14" className="gallery-image"/>
+        </figure>
       </section>
       <div className="footer">Footer</div>
     </div>
