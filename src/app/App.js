@@ -7,7 +7,19 @@ function App() {
       <div className="sidebar">
         <button className="nav-btn"></button>
       </div>
-      <header className="header">Header</header>
+      <header className="header">
+        <img src="/images/logo.png" alt="Nexter Logo" className="header-logo"/>
+        <h3 className="heading-3">Your own home</h3>
+        <h1 className="heading-1">The ultimate personal freedom</h1>
+        <button className="btn header-btn">View our properties</button>
+        <div className="header-seenon-text">Seen on</div>
+        <div className="header-seenon-logos">
+          <img src="/images/logo-bbc.png" alt="Seen on logo 1"/>
+          <img src="/images/logo-forbes.png" alt="Seen on logo 2"/>
+          <img src="/images/logo-techcrunch.png" alt="Seen on logo 3"/>
+          <img src="/images/logo-bi.png" alt="Seen on logo 4"/>
+        </div>
+      </header>
       <div className="realtors">Top 3 Realtors</div>
       <section className="features">
         <div className="feature">
