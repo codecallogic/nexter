@@ -12,7 +12,7 @@ function App() {
         <h3 className="heading-3">Your own home</h3>
         <h1 className="heading-1">The ultimate personal freedom</h1>
         <button className="btn header-btn">View our properties</button>
-        <div className="header-seenon-text">Seen on</div>
+        <div className="header-seenon-text">As seen on</div>
         <div className="header-seenon-logos">
           <img src="/images/logo-bbc.png" alt="Seen on logo 1"/>
           <img src="/images/logo-forbes.png" alt="Seen on logo 2"/>
