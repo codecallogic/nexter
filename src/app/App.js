@@ -97,162 +97,162 @@ function App() {
           <button className="btn home-button">Contact Realtor</button>
         </div>
         <div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
+          <img src="/images/house-2.jpeg" alt="House 2" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
-          <h5 className="home-name">Beautiful Family House</h5>
+          <h5 className="home-name">Modern Glass Villa</h5>
           <div className="home-location">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
             </svg>
-            <p>USA</p>
+            <p>Canada</p>
           </div>
           <div className="home-rooms">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
             </svg>
-            <p>5 Rooms</p>
+            <p>6 Rooms</p>
           </div>
           <div className="home-area">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-expand"></use>
             </svg>
-            <p>325 m <sup>2</sup></p>
+            <p>450 m <sup>2</sup></p>
           </div>
           <div className="home-price">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-key"></use>
             </svg>
-            <p>$1,200,000</p>
+            <p>$2,750,000</p>
           </div>
           <button className="btn home-button">Contact Realtor</button>
         </div>
         <div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
+          <img src="/images/house-3.jpeg" alt="House 3" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
-          <h5 className="home-name">Beautiful Family House</h5>
+          <h5 className="home-name">Cozy Country House</h5>
           <div className="home-location">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
             </svg>
-            <p>USA</p>
+            <p>UK</p>
           </div>
           <div className="home-rooms">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
             </svg>
-            <p>5 Rooms</p>
+            <p>4 Rooms</p>
           </div>
           <div className="home-area">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-expand"></use>
             </svg>
-            <p>325 m <sup>2</sup></p>
+            <p>250 m <sup>2</sup></p>
           </div>
           <div className="home-price">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-key"></use>
             </svg>
-            <p>$1,200,000</p>
+            <p>$850,000</p>
           </div>
           <button className="btn home-button">Contact Realtor</button>
         </div>
         <div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
+          <img src="/images/house-4.jpeg" alt="House 4" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
-          <h5 className="home-name">Beautiful Family House</h5>
+          <h5 className="home-name">Large Rustical Villa</h5>
           <div className="home-location">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
             </svg>
-            <p>USA</p>
+            <p>Portugal</p>
           </div>
           <div className="home-rooms">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
             </svg>
-            <p>5 Rooms</p>
+            <p>6 Rooms</p>
           </div>
           <div className="home-area">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-expand"></use>
             </svg>
-            <p>325 m <sup>2</sup></p>
+            <p>480 m <sup>2</sup></p>
           </div>
           <div className="home-price">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-key"></use>
             </svg>
-            <p>$1,200,000</p>
+            <p>$1,950,000</p>
           </div>
           <button className="btn home-button">Contact Realtor</button>
         </div>
         <div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
+          <img src="/images/house-5.jpeg" alt="House 5" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
-          <h5 className="home-name">Beautiful Family House</h5>
+          <h5 className="home-name">Majestic Palace House</h5>
           <div className="home-location">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
             </svg>
-            <p>USA</p>
+            <p>Germany</p>
           </div>
           <div className="home-rooms">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
             </svg>
-            <p>5 Rooms</p>
+            <p>18 Rooms</p>
           </div>
           <div className="home-area">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-expand"></use>
             </svg>
-            <p>325 m <sup>2</sup></p>
+            <p>4230 m <sup>2</sup></p>
           </div>
           <div className="home-price">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-key"></use>
             </svg>
-            <p>$1,200,000</p>
+            <p>$9,500,000</p>
           </div>
           <button className="btn home-button">Contact Realtor</button>
         </div>
         <div className="home">
-          <img src="/images/house-1.jpeg" alt="House 1" className="home-image"/>
+          <img src="/images/house-6.jpeg" alt="House 6" className="home-image"/>
           <svg className="home-like">
             <use xlinkHref="/images/sprite.svg#icon-heart-full"></use>
           </svg>
-          <h5 className="home-name">Beautiful Family House</h5>
+          <h5 className="home-name">Modern Family Apartment</h5>
           <div className="home-location">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-map-pin"></use>
             </svg>
-            <p>USA</p>
+            <p>Italy</p>
           </div>
           <div className="home-rooms">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-profile-male"></use>
             </svg>
-            <p>5 Rooms</p>
+            <p>3 Rooms</p>
           </div>
           <div className="home-area">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-expand"></use>
             </svg>
-            <p>325 m <sup>2</sup></p>
+            <p>180 m <sup>2</sup></p>
           </div>
           <div className="home-price">
             <svg>
               <use xlinkHref="/images/sprite.svg#icon-key"></use>
             </svg>
-            <p>$1,200,000</p>
+            <p>$600,000</p>
           </div>
           <button className="btn home-button">Contact Realtor</button>
         </div>
@@ -301,7 +301,19 @@ function App() {
           <img src="/images/gal-14.jpeg" alt="Gallery image 14" className="gallery-image"/>
         </figure>
       </section>
-      <div className="footer">Footer</div>
+      <div className="footer">
+        <ul className="nav">
+          <li className="nav-item"><a href="#" className="nav-link">Find Your Dream Home</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Request Proposal</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Download Home Planner</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Contact Us</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Submit Your Property</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Come Work With Us</a></li>
+        </ul>
+        <p className="copyright">
+          &copy; Copyright 2020 by Fabricio Guardia, modern web design using css grids and css flexbox.
+        </p>
+      </div>
     </div>
   );
 }
