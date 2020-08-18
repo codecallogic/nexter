@@ -20,7 +20,26 @@ function App() {
           <img src="/images/logo-bi.png" alt="Seen on logo 4"/>
         </div>
       </header>
-      <div className="realtors">Top 3 Realtors</div>
+      <div className="realtors">
+        <h3 className="heading-3">Top 3 Realtors</h3>
+        <div className="realtors-list">
+          <img src="/images/realtor-1.jpeg" alt="Realtor 1" className="realtors-image"/>
+          <div className="realtors-details">
+            <h4 className="heading-4 heading-4-light">Erik Feinman</h4>
+            <p className="realtors-sold">245 Houses Sold</p>
+          </div>
+          <img src="/images/realtor-2.jpeg" alt="Realtor 2" className="realtors-image"/>
+          <div className="realtors-details">
+            <h4 className="heading-4 heading-4-light">Kim Brown</h4>
+            <p className="realtors-sold">212 Houses Sold</p>
+          </div>
+          <img src="/images/realtor-3.jpeg" alt="Realtor 3" className="realtors-image"/>
+          <div className="realtors-details">
+            <h4 className="heading-4 heading-4-light">Toby Ramsey</h4>
+            <p className="realtors-sold">198 Houses Sold</p>
+          </div>
+        </div>
+      </div>
       <section className="features">
         <div className="feature">
           <svg className="feature-icon">
