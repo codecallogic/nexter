@@ -4,7 +4,9 @@ Nexter a web design concept for real state businesses. Utilizing modern css tool
 
 ![alt](https://i.imgur.com/0ppT7c1.png)
 
-<b> TECHNOLOGIES USED </b> CSS, SASS, FLEXBOX, CSS-GRIDS, NPM, REACT
+## TECHNOLOGIES USED
+
+CSS, SASS, FLEXBOX, CSS-GRIDS, NPM, REACT
 
 ## GETTING STARTED
 
@@ -12,5 +14,5 @@ Nexter a web design concept for real state businesses. Utilizing modern css tool
 
 ## NEXT STEPS
 
-- Add Sibar Menu
+- Add Sidebar Menu
 - Add backend functionalty and user interaction
