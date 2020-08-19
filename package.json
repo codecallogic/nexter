@@ -20,7 +20,8 @@
     "compile:sass": "node-sass src/main.scss src/app/App.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/app/App.comp.css -o src/app/App.prefix.css",
     "compress:css": "node-sass src/app/App.prefix.css src/app/App.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
