@@ -3,11 +3,17 @@
     &-pics {
         background-color: $color-primary;
         background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(/images/back.jpg);
+        background-size: cover;
         grid-column: full-start / col-end 4;
         display: grid;
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(6, 1fr);
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-column: 1/-1;
+            padding: 6rem;
+        }
     }
 
     &-img-1{
@@ -15,6 +21,11 @@
         grid-row: 2 / 6;
         grid-column: 2 / 6;
         box-shadow: 1rem 2rem 5rem rgba(#000, .1);
+
+        @media only screen and (max-width: $bp-medium){
+            grid-row: 1/-1;
+            grid-column: 1/5;
+        }
     }
 
     &-img-2 {
@@ -23,6 +34,11 @@
         grid-column: 4 / 7;
         z-index: 10;
         box-shadow: 1rem 2rem 5rem rgba(#000, .2);
+
+        @media only screen and (max-width: $bp-medium){
+            grid-row: 1/-1;
+            width: 100%;
+        }
     }
     
     &-content {
@@ -36,6 +52,11 @@
         display: grid;
         align-content: center;
         justify-items: start;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-column: 1/-1;
+            grid-row: 5/6;
+        }
 
     }
 
