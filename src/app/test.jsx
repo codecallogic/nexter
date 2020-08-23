@@ -1,7 +1,25 @@
 import React, { Component } from 'react';
+import places from '../services/places'
 
 class Test extends Component {
+
+    constructor() {
+        super()
+        this.state = {
+           schools: null,
+        }
+      }
+
+    
+
+    componentDidMount = async () => {
+        let search = await places.places()
+
+        console.log(search)
+    }
+    
     render () {
+
         return (
             <div>
             {/* <div className="formosi-gallery">
@@ -29,4 +47,5 @@ class Test extends Component {
         )
     }
 }
+
 export default Test
