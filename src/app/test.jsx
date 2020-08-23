@@ -6,13 +6,19 @@ class Test extends Component {
     constructor() {
         super()
         this.state = {
-           schools: null,
+            search: null,
+            schools: null,
         }
-      }
+    }
 
-    
+    schools = (e) => {
+        
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
 
-    componentDidMount = async () => {
+    componentWillMount = async () => {
         let search = await places.places()
 
         console.log(search)
@@ -37,7 +43,7 @@ class Test extends Component {
                 </figure>                
             </div> */}
             <div className="formosi-form">
-                <input type="text" className="formosi-form-school" list="datalist"/>
+                <input type="text" className="formosi-form-school" list="datalist" name="search" onChange={this.schools} value={this.state.input} autoComplete="off"/>
                 <datalist id="datalist">
                     <option value="UCS"></option>
                     <option value="Hult"></option>                
