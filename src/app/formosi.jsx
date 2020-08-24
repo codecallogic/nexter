@@ -7,21 +7,42 @@ class Test extends Component {
         super()
         this.state = {
             search: null,
-            schools: null,
+            schools: [],
         }
     }
 
-    schools = (e) => {
-        
+    schools = async (e) => {
         this.setState({
             [e.target.name]: e.target.value
         })
-    }
+        let search = await places.places(this.state)
 
-    componentWillMount = async () => {
-        let search = await places.places()
+        // console.log(search.results.name)
 
-        console.log(search)
+        let list = search.results.slice().sort();
+        let nonDuplicates = [];
+
+        // console.log(list.length)
+        
+        for(let i = 0; i < list.length -1; i++){
+            // console.log(list[i].name)
+            if(list[i + 1].place_id !== list[i].place_id){
+                nonDuplicates.push(list[i])
+            }
+        }
+
+        // console.log(nonDuplicats.length)
+
+        // for(let i = 0; i < nonDuplicates.length -1; i++){
+        //     console.log(nonDuplicates[i].name)
+        // }
+        
+        this.setState({
+            schools: nonDuplicates
+        })
+
+
+        // console.log(this.state.schools)
     }
     
     render () {
@@ -43,10 +64,11 @@ class Test extends Component {
                 </figure>                
             </div> */}
             <div className="formosi-form">
-                <input type="text" className="formosi-form-school" list="datalist" name="search" onChange={this.schools} value={this.state.input} autoComplete="off"/>
+                <input type="text" className="formosi-form-school" list="datalist" name="search" onChange={this.schools} value={this.state.input} autoComplete="off" placeholder="Enter School"/>
                 <datalist id="datalist">
-                    <option value="UCS"></option>
-                    <option value="Hult"></option>                
+                    {this.state.schools !== null && this.state.schools.map( (s, i) =>                       
+                        <option key={i} value={s.name}></option>
+                    )}  
                 </datalist>
             </div>
             </div>

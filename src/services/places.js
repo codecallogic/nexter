@@ -2,9 +2,11 @@ export default {
     places,        
 }
 
-function places(){
+function places(search){
     return fetch('/api/places', {
-        method: 'GET'
+        method: 'POST',
+        headers: new Headers ({'content-type': 'application/json'}),
+        body: JSON.stringify(search)
     }).then( res => {
         if(res.ok) return res.json()
         throw new Error('Bad request')
