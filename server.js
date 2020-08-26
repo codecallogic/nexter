@@ -14,11 +14,32 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors())
 
 app.use('/api/places', function (req, res){
-    console.log(req.body)
+    // console.log(req.body)
     let data = null;
     request(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${req.body.search}&type=university&fields=name&key=AIzaSyCNueaszuZLnAD0t1ElCg9NUk8EZ8NhDjk`, { json: true }, (err, resp, body) => {
-        if (err) { return console.log(err); }        
-        res.json(body);
+        if (err) { return console.log(err); }
+        let list = body.results.slice().sort();
+        var nonDuplicates = [];
+
+            // console.log(list.length)
+            
+        for(let i = 0; i < list.length -1; i++){
+            // console.log(list[i].name)
+            if(list[i + 1].place_id !== list[i].place_id){
+                nonDuplicates.push(list[i])
+            }
+        }
+
+        for(let i = 0; i < nonDuplicates.length; i++){
+            if('photos' in nonDuplicates[i]){
+                request(`https://maps.googleapis.com/maps/api/place/photo?photoreference=${nonDuplicates[i].photos[0].photo_reference}&maxheight=400&maxwidth=400&key=AIzaSyCNueaszuZLnAD0t1ElCg9NUk8EZ8NhDj`, {json: true}, (err, resp, body) => {
+                    nonDuplicates[i].imageURL = body                        
+                })
+            }
+        }
+
+        // console.log(nonDuplicates)
+        res.json(nonDuplicates);
     })
 })
 

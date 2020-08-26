@@ -11,38 +11,22 @@ class Test extends Component {
         }
     }
 
-    schools = async (e) => {
+    schools = (e) => {
         this.setState({
             [e.target.name]: e.target.value
         })
-        let search = await places.places(this.state)
 
-        // console.log(search.results.name)
+        let timeout = null;
 
-        let list = search.results.slice().sort();
-        let nonDuplicates = [];
+        clearTimeout(timeout);
 
-        // console.log(list.length)
-        
-        for(let i = 0; i < list.length -1; i++){
-            // console.log(list[i].name)
-            if(list[i + 1].place_id !== list[i].place_id){
-                nonDuplicates.push(list[i])
-            }
-        }
-
-        // console.log(nonDuplicats.length)
-
-        // for(let i = 0; i < nonDuplicates.length -1; i++){
-        //     console.log(nonDuplicates[i].name)
-        // }
-        
-        this.setState({
-            schools: nonDuplicates
-        })
-
-
-        // console.log(this.state.schools)
+        timeout = setTimeout( async () => {
+            let search = await places.places(this.state)
+            
+            this.setState({
+                schools: search
+            })
+        }, 600)
     }
     
     render () {
@@ -64,13 +48,27 @@ class Test extends Component {
                 </figure>                
             </div> */}
             <div className="formosi-form">
-                <input type="text" className="formosi-form-school" list="datalist" name="search" onChange={this.schools} value={this.state.input} autoComplete="off" placeholder="Enter School"/>
+                <input type="text" className="formosi-form-school" list="datalist" name="search" onChange={this.schools} value={this.state.input} autoComplete="off" placeholder="Enter School" autoFocus/>
                 <datalist id="datalist">
                     {this.state.schools !== null && this.state.schools.map( (s, i) =>                       
-                        <option key={i} value={s.name}></option>
+                        <option key={i} className="option" value={s.name}></option>
                     )}  
                 </datalist>
             </div>
+            {/* <div className="fformosi-custom-select">
+                <input type="text" className="formosi-custom-select-input" name="search" onChange={this.schools} value={this.state.input} autoComplete="off" placeholder="Enter School" autoFocus/>
+                <svg>
+                    <use xlinkHref="/images/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+                <ul className="formosi-custom-select-options">
+                    {this.state.schools !== null && this.state.schools.map( (s, i) => !("photos" in s)   ?                    
+                        <li key={i} className="formosi-custom-select-option"><img src="" alt="" className="formosi-custom-select-image"/><span className="formosi-custom-select-text">{s.name}</span></li>
+                        :                        
+                        <li key={i} className="formosi-custom-select-option"><img src="" alt="" className="formosi-custom-select-image"/><span className="formosi-custom-select-text">{s.name}</span></li>
+
+                    )}  
+                </ul>
+            </div> */}
             </div>
         )
     }
