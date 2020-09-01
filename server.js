@@ -16,12 +16,12 @@ app.use(cors())
 app.use('/api/places', function (req, res){
     // console.log(req.body)
     let data = null;
-    request(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${req.body.search}&type=university&fields=name&key=AIzaSyCNueaszuZLnAD0t1ElCg9NUk8EZ8NhDjk`, { json: true }, (err, resp, body) => {
+    request(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=a&type=university&fields=name&key=AIzaSyCNueaszuZLnAD0t1ElCg9NUk8EZ8NhDjk`, { json: true }, (err, resp, body) => {
         if (err) { return console.log(err); }
         let list = body.results.slice().sort();
-        var nonDuplicates = [];
+        let nonDuplicates = [];
 
-            // console.log(list.length)
+            // console.log(list)
             
         for(let i = 0; i < list.length -1; i++){
             // console.log(list[i].name)
@@ -30,16 +30,65 @@ app.use('/api/places', function (req, res){
             }
         }
 
-        for(let i = 0; i < nonDuplicates.length; i++){
-            if('photos' in nonDuplicates[i]){
-                request(`https://maps.googleapis.com/maps/api/place/photo?photoreference=${nonDuplicates[i].photos[0].photo_reference}&maxheight=400&maxwidth=400&key=AIzaSyCNueaszuZLnAD0t1ElCg9NUk8EZ8NhDj`, {json: true}, (err, resp, body) => {
-                    nonDuplicates[i].imageURL = body                        
-                })
+        function doSomething() {
+            for(let i = 0; i < nonDuplicates.length; i++){
+                if('photos' in nonDuplicates[i]){
+                    request(`https://maps.googleapis.com/maps/api/place/photo?photoreference=${nonDuplicates[i].photos[0].photo_reference}&maxheight=400&maxwidth=400&key=AIzaSyCNueaszuZLnAD0t1ElCg9NUk8EZ8NhDj`, {json: true}, (err, resp, body) => {
+                        // console.log(nonDuplicates[i].imageURL)                       
+                        nonDuplicates[i].imageURL = body
+                        // console.log(nonDuplicates[i].imageURL) 
+                        // console.log(nonDuplicates)                      
+                    })
+                }
             }
         }
 
-        // console.log(nonDuplicates)
-        res.json(nonDuplicates);
+        function successCallBack() {
+            console.log(nonDuplicates)
+        }
+
+        function failureCallBack(err) {
+            console.log(`error: ${err}`)
+        }
+
+        async function run() {
+            try {
+                const result = await doSomething();
+                console.log(result)
+            } catch(err) {
+                failureCallBack(err)
+            }
+        }
+
+        new Promise((resolve, reject) => {
+            console.log('Initial');
+            for(let i = 0; i < nonDuplicates.length; i++){
+                if('photos' in nonDuplicates[i]){
+                    request(`https://maps.googleapis.com/maps/api/place/photo?photoreference=${nonDuplicates[i].photos[0].photo_reference}&maxheight=400&maxwidth=400&key=AIzaSyCNueaszuZLnAD0t1ElCg9NUk8EZ8NhDj`, {json: true}, (err, resp, body) => {
+                        // console.log(nonDuplicates[i].imageURL)                       
+                        nonDuplicates[i].imageURL = body
+                        // console.log(nonDuplicates[i].imageURL) 
+                        console.log(nonDuplicates)                      
+                    })
+                }
+            }
+            // console.log(nonDuplicates)
+            resolve();
+        })
+        .then(() => {
+            
+            // console.log(nonDuplicates)
+            console.log('Do this');
+        })
+        .catch(() => {
+            console.error('Do that');
+        })
+        .then(() => {
+            // console.log(nonDuplicates)
+            console.log('Do this, no matter what happened before');
+        });
+        
+        // res.json(nonDuplicates);
     })
 })
 
